@@ -1,0 +1,21 @@
+<h1 class="mb-5">Редактирование дохода/расхода</h1>
+<form class="col-12 col-md-9 col-lg-7 col-xl-5 col-xxl-4">
+    <select name="type-record" id="type-record" required class="form-select border mb-3 text-secondary">
+        <option value="" disabled selected>Тип...</option>
+        <option value="income">Доход</option>
+        <option value="expense">Расход</option>
+    </select>
+    <select name="type-record" id="category-record" required class="form-select border mb-3 text-secondary">
+        <option value="" disabled selected>Категория...</option>
+    </select>
+    <input type="number" id="amount" required class="form-control border mb-3" placeholder="Сумма в $...">
+    <div class="position-relative" id="search-interval">
+        <input type="text" id="search-from-date" required class="form-control border mb-3" placeholder="Дата...">
+    </div>
+    <input type="text" id="comment" required class="form-control border mb-3" placeholder="Комментарий...">
+</form>
+
+<div class="main-active">
+    <button id="save" class="btn btn-success px-3 py-2 me-2">Сохранить</button>
+    <a href="#/incomeExpense" class="btn btn-danger px-3 py-2">Отмена</a>
+</div>
